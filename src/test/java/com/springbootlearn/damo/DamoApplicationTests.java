@@ -2,6 +2,7 @@ package com.springbootlearn.damo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.springbootlearn.damo.Entity.Doc;
+import com.springbootlearn.damo.config.ESConfig;
 import com.springbootlearn.damo.service.IESRestfulService;
 import com.springbootlearn.damo.service.ITikaService;
 import org.elasticsearch.common.xcontent.XContentBuilder;
@@ -29,6 +30,9 @@ public class DamoApplicationTests {
     @Autowired
     private IESRestfulService restfulService;
 
+    @Autowired
+    private  ESConfig esConfig;
+
 
     @Test
     public void tikaServiceTest(){
@@ -42,9 +46,13 @@ public class DamoApplicationTests {
 
     @Test
     public void initIndexTest(){
+        //索引名称-数据库名称
         String indexName="userdoc";
+        //类型名--表名称
         String typeName="file";
+        //分片数
         int shardNum=5;
+        //副本数
         int replicNum=1;
 
         //设置mapping
@@ -98,10 +106,11 @@ public class DamoApplicationTests {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
-
-
+    @Test
+    public void searchKeyWords(){
+        String[] searchFields={"title","filecontent"};
+        System.out.println(restfulService.searchDocs("userdoc","中国科学院",searchFields,1,10));
+    }
 }
