@@ -32,4 +32,9 @@ public class ESController {
         model.addAttribute("keyword" ,keyword);
         return "result";
     }
+
+    @RequestMapping(value = "/branch_dev/v2.0")
+    public String find(){
+        return "wonderful";
+    }
 }
