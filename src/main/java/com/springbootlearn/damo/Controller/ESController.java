@@ -36,4 +36,14 @@ public class ESController {
     public String find(){
         return "";
     }
+
+    @RequestMapping("/branch_dev/v4.0")
+    public String find1(){
+        return "";
+    }
+
+    @RequestMapping("/branch_dev/v5.0")
+    public String find2(){
+        return "";
+    }
 }
