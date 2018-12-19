@@ -22,6 +22,7 @@ public class TikaServiceImpl implements ITikaService {
     /**
      * 解析文档内容
      */
+    @Override
     public Doc parserExtraction(File file){
         //接受文档内容
         String fileContent="";

@@ -113,4 +113,5 @@ public class DamoApplicationTests {
         String[] searchFields={"title","filecontent"};
         System.out.println(restfulService.searchDocs("userdoc","中国科学院",searchFields,1,10));
     }
+
 }

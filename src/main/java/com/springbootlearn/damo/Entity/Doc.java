@@ -10,7 +10,4 @@ import lombok.NoArgsConstructor;
 public class Doc {
     private String title;
     private String fileContent;
-    //master上增加的功能
-    private String go;
-    private String master;
 }
