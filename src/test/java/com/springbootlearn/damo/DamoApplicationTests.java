@@ -1,7 +1,7 @@
 package com.springbootlearn.damo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springbootlearn.damo.Entity.Doc;
+import com.springbootlearn.damo.entity.Doc;
 import com.springbootlearn.damo.config.ESConfig;
 import com.springbootlearn.damo.service.IESRestfulService;
 import com.springbootlearn.damo.service.ITikaService;

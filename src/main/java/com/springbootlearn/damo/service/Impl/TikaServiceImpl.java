@@ -1,6 +1,6 @@
 package com.springbootlearn.damo.service.Impl;
 
-import com.springbootlearn.damo.Entity.Doc;
+import com.springbootlearn.damo.entity.Doc;
 import com.springbootlearn.damo.service.ITikaService;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;

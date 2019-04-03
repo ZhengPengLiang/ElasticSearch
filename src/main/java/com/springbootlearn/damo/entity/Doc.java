@@ -1,4 +1,4 @@
-package com.springbootlearn.damo.Entity;
+package com.springbootlearn.damo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

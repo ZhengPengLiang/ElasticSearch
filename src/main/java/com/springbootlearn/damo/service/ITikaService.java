@@ -1,6 +1,6 @@
 package com.springbootlearn.damo.service;
 
-import com.springbootlearn.damo.Entity.Doc;
+import com.springbootlearn.damo.entity.Doc;
 
 import java.io.File;
 
